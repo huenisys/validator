@@ -8,7 +8,10 @@
           "email": "paul@huenits.com"
       }
   ],
-  "require": {},
+  "require": {
+    "respect/validation": "^1.1",
+    "illuminate/support": "^5.8"
+  },
   "require-dev": {
       "phpunit/phpunit": "^8.0"
   },

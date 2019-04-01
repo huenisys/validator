@@ -49,6 +49,17 @@ trait RulesNormalizer {
 
     protected static function _strToParamsArray(String $fnParamsMaybeWithComma)
     {
-        return array_map('trim', explode(',', $fnParamsMaybeWithComma));
+        return array_map(
+            function($v){
+                switch ($v) {
+                    case 'null':
+                        return null;
+                        break;
+                    default:
+                    return trim($v);
+                }
+            },
+            explode(',', $fnParamsMaybeWithComma)
+        );
     }
 }
