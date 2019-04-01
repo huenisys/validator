@@ -1,0 +1,25 @@
+{
+  "name": "huenisys/validator",
+  "description": "easily reusable validator package",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "huenisys",
+          "email": "paul@huenits.com"
+      }
+  ],
+  "require": {},
+  "require-dev": {
+      "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "huenisys\\Validator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "huenisys\\Validator\\Tests\\": "tests/"
+    }
+  }
+}
